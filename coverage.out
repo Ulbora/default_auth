@@ -1,0 +1,7 @@
+mode: set
+github.com/Ulbora/default_auth/MockDefaultAuth.go:16.59,18.2 1 1
+github.com/Ulbora/default_auth/defaultAuth.go:28.55,32.17 4 1
+github.com/Ulbora/default_auth/defaultAuth.go:48.2,48.12 1 1
+github.com/Ulbora/default_auth/defaultAuth.go:32.17,34.3 1 1
+github.com/Ulbora/default_auth/defaultAuth.go:34.8,44.89 5 1
+github.com/Ulbora/default_auth/defaultAuth.go:44.89,46.4 1 1

@@ -1,0 +1,4 @@
+github.com/Ulbora/GoProxy v1.0.1 h1:7gFPaJdXDV3tFDSWYxpQx7SQmNKcZPrv4SMwxa+vFhA=
+github.com/Ulbora/GoProxy v1.0.1/go.mod h1:8qICy+U1tSywRYoy9RdP+Zm6G2nN2K1YcvMupVlkIYI=
+github.com/Ulbora/auth_interface v1.0.0 h1:VOlwvngE1XqmtIpuga0bC/pz6g5cCNeMnKQEeEXWVzw=
+github.com/Ulbora/auth_interface v1.0.0/go.mod h1:i8dptQU29zmoscU4NHtddNpBltSi9oLDQXylQgnqxFs=
