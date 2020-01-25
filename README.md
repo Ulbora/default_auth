@@ -6,9 +6,10 @@ Default authorizaton module used on GoAuth2
 [![Go Report Card](https://goreportcard.com/badge/github.com/Ulbora/default_auth)](https://goreportcard.com/report/github.com/Ulbora/default_auth)
 
 
-Can interface with any proxy for any type of authentication service. GoAuth2Users meets all of the requirements below.
+Can interface with any GoAuth2 proxy for any type of authentication service. GoAuth2Users meets all of the requirements below for a GoAuth2 Proxy.
 
-### Any Proxy service must meet the following requirement:
+### Any GoAuth2 Proxy service must meet the following requirement:
+The GoAuth2 Proxy must implement the code inside the "login" service to interface with the target authentication service.
 
 ### Validate User
 ```
