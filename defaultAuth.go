@@ -48,4 +48,11 @@ func (m *DefaultAuth) UserLogin(login *au.Login) bool {
 	return rtn
 }
 
+//GetNew GetNew
+func (m *DefaultAuth) GetNew() au.AuthInterface {
+	var rtn au.AuthInterface
+	rtn = m
+	return rtn
+}
+
 //GO111MODULE=on go mod init github.com/Ulbora/default_auth

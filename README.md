@@ -6,7 +6,7 @@ Default authorizaton module used on GoAuth2
 [![Go Report Card](https://goreportcard.com/badge/github.com/Ulbora/default_auth)](https://goreportcard.com/report/github.com/Ulbora/default_auth)
 
 
-Proxy for any type of authentication service. GoAuth2Users meets all of the requirements below.
+Can interface with any proxy for any type of authentication service. GoAuth2Users meets all of the requirements below.
 
 ### Any Proxy service must meet the following requirement:
 
@@ -36,4 +36,32 @@ Response:
     "valid": true,
     "code": "10"
 }
+```
+
+
+# Usage
+
+```
+
+import (
+	px "github.com/Ulbora/GoProxy"
+	au "github.com/Ulbora/auth_interface"
+	"testing"
+)
+
+var authURL = "http://localhost:3001/rs/user/login"
+
+var proxy px.GoProxy
+
+var login au.Login
+login.Username = "admin"
+login.Password = "admin"
+login.ClientID = 10
+
+var da DefaultAuth
+da.AuthServerURL = authURL
+da.Proxy = proxy.GetNewProxy()
+ai := da.GetNew()
+val := ai.UserLogin(&login)
+
 ```

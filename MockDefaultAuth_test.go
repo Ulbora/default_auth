@@ -21,8 +21,8 @@ func TestMockDefaultAuth_UserLogin(t *testing.T) {
 	da.MockValid = true
 	da.AuthServerURL = authURL
 	da.Proxy = proxy.GetNewProxy()
-	var ai au.AuthInterface
-	ai = &da
+	ai := da.GetNew()
+
 	val := ai.UserLogin(&login)
 	if !val {
 		t.Fail()

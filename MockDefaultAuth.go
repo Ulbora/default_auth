@@ -16,3 +16,10 @@ type MockDefaultAuth struct {
 func (m *MockDefaultAuth) UserLogin(login *au.Login) bool {
 	return m.MockValid
 }
+
+//GetNew GetNew
+func (m *MockDefaultAuth) GetNew() au.AuthInterface {
+	var rtn au.AuthInterface
+	rtn = m
+	return rtn
+}

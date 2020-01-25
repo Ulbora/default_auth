@@ -19,8 +19,7 @@ func TestDefaultAuth_UserLogin(t *testing.T) {
 	var da DefaultAuth
 	da.AuthServerURL = authURL
 	da.Proxy = proxy.GetNewProxy()
-	var ai au.AuthInterface
-	ai = &da
+	ai := da.GetNew()
 	val := ai.UserLogin(&login)
 	if !val {
 		t.Fail()
