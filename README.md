@@ -19,6 +19,7 @@ Example
 ```
 import( 
     au "github.com/Ulbora/auth_interface"
+    
     px "github.com/Ulbora/GoProxy"
 )
 
