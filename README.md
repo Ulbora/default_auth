@@ -10,14 +10,26 @@ Can interface with any GoAuth2 proxy for any type of authentication service. GoA
 
 ### Any GoAuth2 Proxy service must meet the following requirement:
 * Must implement the login method from github.com/Ulbora/auth_interface
-
 ```
-import( 
-au "github.com/Ulbora/auth_interface"
-)
 
 type AuthInterface interface {
 	UserLogin(login *au.Login) bool
+}
+```
+Example
+```
+import( 
+    au "github.com/Ulbora/auth_interface"
+    px "github.com/Ulbora/GoProxy"
+)
+
+type SomeAuth struct{
+    Proxy         px.Proxy
+	AuthServerURL string
+}
+
+func (m *SomeAuth) UserLogin(login *au.Login) bool {
+    // todo
 }
 ```
 
