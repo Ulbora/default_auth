@@ -12,7 +12,7 @@ Can interface with any GoAuth2 proxy for any type of authentication service. GoA
 * Must implement the login method from github.com/Ulbora/auth_interface
 ```
 type AuthInterface interface {
-	UserLogin(login *au.Login) bool
+	UserLogin(login *Login) bool
 }
 ```
 Example
@@ -24,7 +24,6 @@ import(
 
 type SomeAuth struct{
     Proxy   px.Proxy
-    
     AuthServerURL string
 }
 
