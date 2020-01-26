@@ -18,14 +18,14 @@ type AuthInterface interface {
 Example
 ```
 import( 
-    au "github.com/Ulbora/auth_interface"
-    
+    au "github.com/Ulbora/auth_interface"    
     px "github.com/Ulbora/GoProxy"
 )
 
 type SomeAuth struct{
-    Proxy         px.Proxy
-	AuthServerURL string
+    Proxy   px.Proxy
+    
+    AuthServerURL string
 }
 
 func (m *SomeAuth) UserLogin(login *au.Login) bool {
