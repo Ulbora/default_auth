@@ -9,7 +9,19 @@ Default authorizaton module used on GoAuth2
 Can interface with any GoAuth2 proxy for any type of authentication service. GoAuth2Users meets all of the requirements below for a GoAuth2 Proxy.
 
 ### Any GoAuth2 Proxy service must meet the following requirement:
-The GoAuth2 Proxy must implement the code inside the "login" service to interface with the target authentication service.
+* Must implement the login method from github.com/Ulbora/auth_interface
+
+```
+import( 
+au "github.com/Ulbora/auth_interface"
+)
+
+type AuthInterface interface {
+	UserLogin(login *au.Login) bool
+}
+```
+
+* The GoAuth2 Proxy must implement the code inside the "login" service to interface with the target authentication service.
 
 ### Validate User
 ```
