@@ -1,6 +1,6 @@
 
 
-Default authorizaton module used on GoAuth2
+Default authentication module used on GoAuth2
 ==============
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/Ulbora/default_auth)](https://goreportcard.com/report/github.com/Ulbora/default_auth)
